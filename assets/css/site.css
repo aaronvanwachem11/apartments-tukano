@@ -103,6 +103,13 @@ p{margin:0}
 .lang a[aria-current="page"]{background:#fff;color:var(--navy)}
 @media (max-width:900px){.nav-links{display:none}}
 @media (max-width:520px){.brand-name{font-size:17px}.brand-mark img{height:36px}.nav .btn{padding:10px 14px;font-size:14px;min-height:44px}.nav{gap:10px;padding:10px 16px}}
+.brand{min-width:0}
+.brand-mark{flex:none}
+.brand-mark img{max-width:none}
+.nav .btn .short{display:none}
+@media (max-width:420px){.nav .btn .long{display:none}.nav .btn .short{display:inline}.lang a{padding:4px 10px}}
+@media (max-width:360px){.brand{gap:8px}.brand-name{font-size:15px}.nav{gap:8px;padding:10px 12px}.lang a{padding:4px 8px}.nav .btn{padding:10px 12px}}
+@media (max-width:340px){.brand-name{font-size:14px}.lang a{padding:4px 6px}.nav .btn{padding:8px 10px;font-size:13px}}
 
 /* hero */
 .hero{background:var(--navy);color:#fff}
