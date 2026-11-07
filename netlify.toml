@@ -3,13 +3,12 @@
   publish = "."
 
 # Send the Netlify address to the real domain.
-# Turned off until tukanomahahual.com is connected and opens this site (README, "After it is live").
-# To turn on: remove the # at the start of the next five lines. Change "tukanomahahual" if your Netlify site has another name.
-# [[redirects]]
-#   from = "https://tukanomahahual.netlify.app/*"
-#   to = "https://tukanomahahual.com/:splat"
-#   status = 301
-#   force = true
+# Deploy previews use a different address (deploy-preview-N--...), so they keep working.
+[[redirects]]
+  from = "https://frolicking-jelly-3f63fb.netlify.app/*"
+  to = "https://tukanomahahual.com/:splat"
+  status = 301
+  force = true
 
 # Send www to the real domain.
 

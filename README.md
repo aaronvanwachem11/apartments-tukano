@@ -28,7 +28,9 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 
 ## After it is live
 
-**Turn on the Netlify redirect.** Once `https://tukanomahahual.com/` opens the new site, open `netlify.toml`, remove the `#` in front of the five redirect lines near the top, and commit. Until then, the `tukanomahahual.netlify.app` address keeps working on its own.
+**Netlify address.** The site's Netlify address, `frolicking-jelly-3f63fb.netlify.app`, redirects to `https://tukanomahahual.com/` (set in `netlify.toml`). If you rename the site in Netlify, change that address in `netlify.toml` too. The old June project `tukanomahahual.netlify.app` is a separate, unused Netlify site and can be deleted.
+
+**Email.** The domain's email (MX and webmail records) still runs on the FatCow hosting plan at Network Solutions. Don't cancel that plan unless the email moves somewhere else first.
 
 **Contact form.** In Netlify, open Forms. The form called `contact` appears after the first deploy. Under Form notifications, add an email notification to tukano@nym.hush.com. The `language` field tells you which page it came from.
 
