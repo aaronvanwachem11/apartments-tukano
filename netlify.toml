@@ -1,0 +1,43 @@
+# Apartments Tukano — plain HTML site, no build step.
+[build]
+  publish = "."
+
+# Send the Netlify address to the real domain.
+# Turned off until tukanomahahual.com is connected and opens this site (README, "After it is live").
+# To turn on: remove the # at the start of the next five lines. Change "tukanomahahual" if your Netlify site has another name.
+# [[redirects]]
+#   from = "https://tukanomahahual.netlify.app/*"
+#   to = "https://tukanomahahual.com/:splat"
+#   status = 301
+#   force = true
+
+# Send www to the real domain.
+
+[[redirects]]
+  from = "https://www.tukanomahahual.com/*"
+  to = "https://tukanomahahual.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 301
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Drafts and snippets kept in the repo are never served.
+[[redirects]]
+  from = "/_drafts/*"
+  to = "/404.html"
+  status = 404
+  force = true
