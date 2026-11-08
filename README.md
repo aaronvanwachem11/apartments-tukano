@@ -9,7 +9,6 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 - `thanks/`, `es/gracias/`: pages shown after the contact form is sent
 - `privacy/`, `es/privacidad/`: privacy notice (aviso de privacidad)
 - `404.html`: page-not-found
-- `_drafts/`: snippets not yet in use (never served)
 - `assets/css/site.css`: all styles, including the Lodgify search bar colours
 - `assets/fonts/`: the two fonts, served from this site
 - `assets/js/site.js`: photo gallery, date checks
@@ -34,7 +33,7 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 
 **Contact form.** In Netlify, open Forms. The form called `contact` appears after the first deploy. Under Form notifications, add an email notification to tukano@nym.hush.com. The `language` field tells you which page it came from.
 
-**Lodgify (not live yet).** The date picker in the hero currently opens WhatsApp with the guest's dates filled in. The Lodgify search bar is ready in `_drafts/lodgify-search-bar.html`, which Netlify never serves. Don't use it yet: it still points at Lodgify's demo rental (#16403). When the real Tukano property is set up in Lodgify, regenerate the widget under Website builder → External widgets, put the real checkout URLs into the snippet, and follow the steps at the top of that file. Then connect Google Vacation Rentals under Channels (Professional plan).
+**Lodgify.** The Lodgify search bar sits on its own full-width row under the hero text and photo, with a WhatsApp line under it for two-bedroom enquiries. It uses website ID 687595 and books rental #864379 (the Three-Bedroom), the only apartment bookable on Lodgify for now. The English snippet is in `index.html` and the Spanish one in `es/index.html`; both load `renderPortableSearchBar.js` just above `site.js`. Its colours, corners and font are set with Lodgify's CSS variables in `assets/css/site.css`. To change labels or the rental, regenerate the widget under Website builder → External widgets and replace the `#lodgify-search-bar` block on each page. Then connect Google Vacation Rentals under Channels (Professional plan).
 
 **Google Search Console.** Add `tukanomahahual.com` as a Domain property and verify it with the DNS record Google gives you. Submit `https://tukanomahahual.com/sitemap.xml`. Use URL Inspection on `/` and `/es/` and click Request indexing.
 

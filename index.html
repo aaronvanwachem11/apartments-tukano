@@ -126,21 +126,47 @@
       <p class="eyebrow">Mahahual · Costa Maya · Quintana Roo</p>
       <h1>Apartments in Mahahual, one street from the beach.</h1>
       <p class="hero-sub">Furnished two- and three-bedroom apartments right behind Nacional Beach Club. Walk out the door, cross the street, and you are on the sand.</p>
-      <form id="availability" class="avail" action="#book" aria-label="Check availability">
-        <label>Check-in <input type="date" name="checkin" data-checkin required></label>
-        <label>Check-out <input type="date" name="checkout" data-checkout required></label>
-        <label class="small">Guests
-          <select name="guests">
-            <option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option>
-          </select>
-        </label>
-        <button class="btn btn-yellow" type="submit">Check availability</button>
-      </form>
       <p class="hero-note">Book direct and pay no booking-site fees. Questions? <a href="https://wa.me/529831542010">Message us on WhatsApp</a></p>
     </div>
     <div class="hero-media">
       <img src="/assets/img/exterior-1200.jpg" srcset="/assets/img/exterior-600.jpg 600w, /assets/img/exterior-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 600px" width="1200" height="900" alt="The Apartments Tukano building in Mahahual, white with balconies and the Tukano toucan sign" fetchpriority="high">
       <p class="hero-tag">Right behind Nacional Beach Club</p>
+    </div>
+    <div class="hero-book">
+      <div class="avail-lodgify">
+<div
+  id="lodgify-search-bar"
+  data-website-id="687595"
+  data-language-code="en"
+  data-checkout-page-url='https://checkout.lodgify.com/web-4e4c357dbc/en/#/864379'
+
+  data-dates-check-in-label='Check-in'
+  data-dates-check-out-label='Check-out'
+  data-guests-counter-label='Guests'
+  data-guests-input-singular-label='{{NumberOfGuests}} guest'
+  data-guests-input-plural-label='{{NumberOfGuests}} guests'
+  data-location-input-label='Location'
+  data-search-button-label='Search'
+  data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} night","other":"Minimum {minStay} nights"}'
+  data-guests-breakdown-label='Guests'
+  data-adults-label='{"one":"adult","other":"adults"}'
+  data-adults-description='Ages {minAge} or above'
+  data-children-label='{"one":"child","other":"children"}'
+  data-children-description='Ages {minAge}-{maxAge}'
+  data-children-not-allowed-label='Not suitable for children'
+  data-infants-label='{"one":"infant","other":"infants"}'
+  data-infants-description='Under {maxAge}'
+  data-infants-not-allowed-label='Not suitable for infants'
+  data-pets-label='{"one":"pet","other":"pets"}'
+  data-pets-not-allowed-label='Not allowed'
+  data-done-label='Done'
+
+  data-new-tab="true"
+  data-version="stable"
+  data-has-guests-breakdown
+></div>
+      </div>
+      <p class="hero-note">Looking for a two-bedroom? <a href="https://wa.me/529831542010">Message us on WhatsApp</a></p>
     </div>
   </div>
   <div class="band" role="img" aria-label="Toucan mural artwork"></div>
@@ -368,6 +394,7 @@
   </div>
 </dialog>
 
+<script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
 <script src="/assets/js/site.js?v=2" defer></script>
 </body>
 </html>

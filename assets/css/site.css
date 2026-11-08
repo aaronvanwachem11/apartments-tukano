@@ -248,13 +248,15 @@ input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;bo
 .page h2{font-size:24px;margin:32px 0 10px;letter-spacing:-.01em}
 .page p,.page li{font-size:18px;margin-bottom:12px}
 
-/* Lodgify search bar, in Tukano colours */
+/* Lodgify search bar, matched to the old hero bar (.avail / .avail .btn) */
 :root{
-  --ldg-psb-background:#ffffff; --ldg-psb-border-radius:18px; --ldg-psb-box-shadow:0 24px 54px rgba(0,0,0,.18);
-  --ldg-psb-padding:14px; --ldg-psb-input-background:#ffffff; --ldg-psb-button-border-radius:999px;
-  --ldg-psb-color-primary:#FFD93D; --ldg-psb-color-primary-lighter:#FFE98A; --ldg-psb-color-primary-darker:#7D6300; --ldg-psb-color-primary-contrast:#161A44;
-  --ldg-semantic-color-primary:#FFD93D; --ldg-semantic-color-primary-lighter:#FFE98A; --ldg-semantic-color-primary-darker:#7D6300; --ldg-semantic-color-primary-contrast:#161A44;
-  --ldg-component-modal-z-index:999;
+  --ldg-psb-background:#ffffff; --ldg-psb-border-radius:18px; --ldg-psb-box-shadow:none;
+  --ldg-psb-padding:16px; --ldg-psb-input-background:#ffffff; --ldg-psb-button-border-radius:12px;
+  --ldg-psb-color-primary:#FFD93D; --ldg-psb-color-primary-lighter:#FFE56E; --ldg-psb-color-primary-darker:#7D6300; --ldg-psb-color-primary-contrast:#161A44;
+  --ldg-semantic-color-primary:#FFD93D; --ldg-semantic-color-primary-lighter:#FFE56E; --ldg-semantic-color-primary-darker:#7D6300; --ldg-semantic-color-primary-contrast:#161A44;
+  --ldg-component-modal-z-index:999; --ldg-psb-font-family:var(--body);
 }
 #lodgify-search-bar{width:100%;color:var(--ink)}
-.avail-lodgify{margin-top:6px;min-height:76px}
+#lodgify-search-bar section{--ldg-component-spacing-button-paddingX:22px}
+.avail-lodgify{min-height:76px}
+.hero-book{flex:1 1 100%;display:flex;flex-direction:column;gap:12px;text-align:center}
