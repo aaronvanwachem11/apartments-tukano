@@ -33,7 +33,7 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 
 **Contact form.** In Netlify, open Forms. The form called `contact` appears after the first deploy. Under Form notifications, add an email notification to tukano@nym.hush.com. The `language` field tells you which page it came from.
 
-**Lodgify.** The Lodgify search bar sits on its own full-width row under the hero text and photo, with a WhatsApp line under it for two-bedroom enquiries. It uses website ID 687595 and books rental #864379 (the Three-Bedroom), the only apartment bookable on Lodgify for now. The English snippet is in `index.html` and the Spanish one in `es/index.html`; both load `renderPortableSearchBar.js` just above `site.js`. Its colours, corners and font are set with Lodgify's CSS variables in `assets/css/site.css`. To change labels or the rental, regenerate the widget under Website builder → External widgets and replace the `#lodgify-search-bar` block on each page. Then connect Google Vacation Rentals under Channels (Professional plan).
+**Lodgify.** The Lodgify search bar sits on its own full-width row under the hero text and photo. It uses website ID 687595 and books rental #864379 (the Three-Bedroom, 6 units). The line under it links to the Two-Bedroom checkout (rental #864390, 2 units). The "See dates & prices" button on each apartment card opens that rental's Lodgify checkout in a new tab: `checkout.lodgify.com/en/web-4e4c357dbc/<rental id>/reservation`, with `/es/` on the Spanish page. The English snippet is in `index.html` and the Spanish one in `es/index.html`; both load `renderPortableSearchBar.js` just above `site.js`. Its colours, corners and font are set with Lodgify's CSS variables in `assets/css/site.css`. To change labels or the rental, regenerate the widget under Website builder → External widgets and replace the `#lodgify-search-bar` block on each page. Then connect Google Vacation Rentals under Channels (Professional plan).
 
 **Google Search Console.** Add `tukanomahahual.com` as a Domain property and verify it with the DNS record Google gives you. Submit `https://tukanomahahual.com/sitemap.xml`. Use URL Inspection on `/` and `/es/` and click Request indexing.
 
@@ -51,6 +51,7 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 ## Making changes
 
 - **Prices.** The "From" prices are in both homepages, in the apartment cards and in the `priceRange` line near the top of each file.
+- **Apartment counts and guest rules.** The counts (2 two-bedroom, 6 three-bedroom) and the extra-guest wording are in the apartment cards and the "How many people" question on both homepages. Keep them the same as Lodgify, which charges the extra-guest fee for children too.
 - **WhatsApp number.** Search for `529831542010` and `+52 983 154 2010` across all files and replace both.
 - **Email.** Search for `tukano@nym.hush.com` across all files.
 - **Styles or script.** After changing `site.css` or `site.js`, raise the number in `?v=2` (to `?v=3`, and so on) wherever the file is linked in every `.html` file. Otherwise returning visitors keep the old file for up to a week.
