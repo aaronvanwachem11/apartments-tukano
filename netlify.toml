@@ -23,6 +23,29 @@
   to = "/:splat"
   status = 301
 
+# Content pages live in folders (e.g. /apartments/two-bedroom/index.html), so
+# Netlify serves them at the trailing-slash URL. The parent folders have no page
+# of their own; send anyone who trims the URL to the nearest real page.
+[[redirects]]
+  from = "/apartments"
+  to = "/#apartments"
+  status = 301
+
+[[redirects]]
+  from = "/mahahual"
+  to = "/mahahual/things-to-do/"
+  status = 301
+
+[[redirects]]
+  from = "/es/departamentos"
+  to = "/es/#departamentos"
+  status = 301
+
+[[redirects]]
+  from = "/es/mahahual"
+  to = "/es/mahahual/que-hacer/"
+  status = 301
+
 [[headers]]
   for = "/assets/*"
   [headers.values]

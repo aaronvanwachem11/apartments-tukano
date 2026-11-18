@@ -6,6 +6,9 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 
 - `index.html`: English homepage
 - `es/index.html`: Spanish homepage
+- `apartments/two-bedroom/`, `apartments/three-bedroom/` (Spanish: `es/departamentos/dos-recamaras/`, `es/departamentos/tres-recamaras/`): one page per apartment type
+- `mahahual/getting-there/`, `mahahual/things-to-do/`, `mahahual/banco-chinchorro/` (Spanish: `es/mahahual/como-llegar/`, `es/mahahual/que-hacer/`, `es/mahahual/banco-chinchorro/`): Mahahual guide
+- `long-stays/` (Spanish: `es/estancias-largas/`): monthly and winter stays
 - `thanks/`, `es/gracias/`: pages shown after the contact form is sent
 - `privacy/`, `es/privacidad/`: privacy notice (aviso de privacidad)
 - `404.html`: page-not-found
@@ -50,7 +53,8 @@ Plain HTML site for tukanomahahual.com. English at `/`, Spanish at `/es/`. No bu
 
 ## Making changes
 
-- **Prices.** The "From" prices are in both homepages, in the apartment cards and in the `priceRange` line near the top of each file.
+- **Prices.** The "From" prices are in both homepages (apartment cards and the `priceRange` line near the top), on the four apartment pages, and on the two long-stay pages. Cleaning fees and house rules are on the apartment pages.
+- **Season dates.** The open and closed months are on the four apartment pages and the two long-stay pages. Update them each year.
 - **Apartment counts and guest rules.** The counts (2 two-bedroom, 6 three-bedroom) and the extra-guest wording are in the apartment cards and the "How many people" question on both homepages. Keep them the same as Lodgify, which charges the extra-guest fee for children too.
 - **WhatsApp number.** Search for `529831542010` and `+52 983 154 2010` across all files and replace both.
 - **Email.** Search for `tukano@nym.hush.com` across all files.
