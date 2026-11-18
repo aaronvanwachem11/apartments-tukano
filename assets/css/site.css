@@ -274,7 +274,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;bo
 .actions .btn-green{font-size:16px;padding:12px 22px}
 .prose{max-width:800px}
 .prose>*+*{margin-top:16px}
-.prose h2{font-size:clamp(28px,3.2vw,40px);margin-top:8px}
+.prose h2{font-size:clamp(28px,3.2vw,40px)}
+.prose>h2:not(:first-child){margin-top:44px}
 .prose h3{font-size:22px;letter-spacing:-.01em;margin-top:28px}
 .prose p,.prose li{font-size:18px}
 .prose ul{padding-left:22px} .prose li+li{margin-top:8px}
@@ -282,8 +283,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;bo
 .specs{list-style:none;margin:0;padding:0 !important;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:10px}
 .specs li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0 !important}
 .explore .specs li{border-color:#D3E8E0}
-.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:10px;margin-top:28px}
-.photo-grid img{width:100%;height:230px;object-fit:cover;border-radius:16px}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:10px;margin-top:28px}
+.photo-grid img{width:100%;height:200px;object-fit:cover;border-radius:16px}
 .cta{background:var(--navy);color:#fff;border-radius:var(--r);padding:40px;display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between}
 .cta>div:first-child{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:12px}
 .cta p{color:var(--muted-on-navy);font-size:18px}
@@ -293,3 +294,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;bo
 .apt-more a{font-weight:700}
 .card h3 a{color:inherit} .card h3 a:hover{color:#C8521A}
 .explore-more{margin-top:24px;font-size:18px} .explore-more a{font-weight:700}
+
+.nav-links a,.nav .btn{white-space:nowrap}
+@media (max-width:1120px){.nav-links{gap:18px;font-size:16px}.nav{gap:16px 20px}}
+@media (max-width:1040px){.nav-links{display:none}}
