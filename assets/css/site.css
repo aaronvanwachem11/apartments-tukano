@@ -298,3 +298,22 @@ input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none;bo
 .nav-links a,.nav .btn{white-space:nowrap}
 @media (max-width:1120px){.nav-links{gap:18px;font-size:16px}.nav{gap:16px 20px}}
 @media (max-width:1040px){.nav-links{display:none}}
+
+/* logo: vector toucan, no white box */
+.brand-mark{background:none;padding:0;border-radius:0;display:flex}
+.brand-mark img{height:52px;width:auto}
+@media (max-width:520px){.brand-mark img{height:44px}}
+
+/* phone and tablet menu (the text links hide below 1040px) */
+.menu-btn{display:none;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:8px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:transparent;color:#fff;font:700 15px/1 var(--body);cursor:pointer;flex:none}
+.menu-btn:hover,.menu-btn[aria-expanded="true"]{background:rgba(255,255,255,.12)}
+.menu-panel{position:absolute;left:0;right:0;top:100%;background:var(--navy);border-top:1px solid rgba(255,255,255,.15);box-shadow:0 16px 32px rgba(0,0,0,.35);max-height:calc(100vh - 72px);overflow-y:auto}
+.menu-panel[hidden]{display:none}
+.menu-panel ul{list-style:none;margin:0 auto;padding:8px 24px 4px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));column-gap:28px}
+.menu-panel li a{display:flex;align-items:center;min-height:48px;color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-bottom:1px solid rgba(255,255,255,.12)}
+.menu-panel li a:hover,.menu-panel li a[aria-current="page"]{color:var(--yellow)}
+.menu-panel .lang-menu{margin:16px 24px 24px;width:max-content}
+@media (max-width:1040px){.menu-btn{display:inline-flex}}
+@media (min-width:1041px){.menu-panel{display:none !important}}
+@media (max-width:520px){.nav>.lang{display:none}.menu-panel ul,.menu-panel .lang-menu{padding-left:16px;padding-right:16px}.menu-panel .lang-menu{margin-left:16px}}
+@media (max-width:420px){.menu-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.menu-btn{padding:0;width:44px}}

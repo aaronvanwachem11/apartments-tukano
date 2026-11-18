@@ -38,6 +38,21 @@
     });
   }
 
+  /* Phone and tablet menu */
+  var menuBtn = document.querySelector('.menu-btn');
+  var menu = document.getElementById('site-menu');
+  if (menuBtn && menu) {
+    var setMenu = function (open) {
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.hidden = !open;
+    };
+    menuBtn.addEventListener('click', function () { setMenu(menu.hidden); });
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); }
+    });
+  }
+
   /* Gallery lightbox */
   var dlg = document.getElementById('lightbox');
   var items = Array.prototype.slice.call(document.querySelectorAll('.gallery button[data-full]'));
