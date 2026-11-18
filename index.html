@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
 <link rel="preload" as="image" href="/assets/img/exterior-1200.jpg" imagesrcset="/assets/img/exterior-600.jpg 600w, /assets/img/exterior-1200.jpg 1200w" imagesizes="(max-width: 900px) 100vw, 600px">
 <script type="application/ld+json">
 {
@@ -65,6 +65,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       },
       "priceRange": "MXN 1,550–3,700 per night",
       "currenciesAccepted": "MXN",
+      "checkinTime": "16:00",
+      "checkoutTime": "12:00",
       "availableLanguage": ["English", "Spanish"],
       "numberOfRooms": 8,
       "amenityFeature": [
@@ -112,12 +114,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="site-header">
   <nav class="nav" aria-label="Main">
     <a class="brand" href="/">
-      <span class="brand-mark"><img src="/assets/img/logo.png" alt="" width="27" height="44"></span>
+      <span class="brand-mark"><img src="/assets/img/logo.svg" alt="" width="33" height="52"></span>
       <span class="brand-name">Apartments Tukano</span>
     </a>
     <ul class="nav-links">
       <li><a href="#apartments">Apartments</a></li>
-      <li><a href="#photos">Photos</a></li>
+      <li><a href="/mahahual/things-to-do/">Mahahual guide</a></li>
       <li><a href="#location">Location</a></li>
       <li><a href="#book">Contact</a></li>
     </ul>
@@ -125,8 +127,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="/" hreflang="en" lang="en" aria-current="page">EN</a>
       <a href="/es/" hreflang="es" lang="es">ES</a>
     </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="menu-label">Menu</span></button>
     <a class="btn btn-yellow" href="#book"><span class="long">Check availability</span><span class="short">Book</span></a>
   </nav>
+  <div id="site-menu" class="menu-panel" hidden>
+    <ul>
+      <li><a href="#apartments">Apartments</a></li>
+      <li><a href="/apartments/two-bedroom/">Two-bedroom</a></li>
+      <li><a href="/apartments/three-bedroom/">Three-bedroom</a></li>
+      <li><a href="/mahahual/things-to-do/">Mahahual guide</a></li>
+      <li><a href="/mahahual/getting-there/">Getting there</a></li>
+      <li><a href="/mahahual/cruise-port/">Cruise port</a></li>
+      <li><a href="/long-stays/">Long stays</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#book">Contact</a></li>
+    </ul>
+    <div class="lang lang-menu" aria-label="Language">
+      <a href="/" hreflang="en" lang="en" aria-current="page">EN</a>
+      <a href="/es/" hreflang="es" lang="es">ES</a>
+    </div>
+  </div>
 </header>
 
 <main id="main">
@@ -213,8 +233,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="/assets/img/kitchen-600.jpg" width="600" height="400" alt="Kitchen with fridge, stove and island" loading="lazy">
       </div>
       <div class="apt-body">
-        <div class="apt-head"><h3>Two-Bedroom</h3><span class="count">2 apartments</span></div>
+        <div class="apt-head"><h3><a href="/apartments/two-bedroom/">Two-Bedroom</a></h3><span class="count">2 apartments</span></div>
         <p>Includes up to 4 guests, maximum 6. Each extra guest, adult or child, is MXN&nbsp;200 per night. Two bedrooms, two bathrooms, a full kitchen, a living and dining area, and a private balcony.</p>
+        <p class="apt-more"><a href="/apartments/two-bedroom/">Beds, kitchen and house rules for the two-bedroom</a></p>
         <ul class="chips"><li>Full kitchen</li><li>A/C in every room</li><li>Wi-Fi</li><li>Balcony</li><li>2 bathrooms</li></ul>
         <div class="apt-foot">
           <p class="price"><small>From</small><strong>MXN 1,550</strong> <span>/ night</span></p>
@@ -229,8 +250,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="/assets/img/bathroom-600.jpg" width="600" height="400" alt="Bathroom with double stone sinks and a glass shower" loading="lazy">
       </div>
       <div class="apt-body">
-        <div class="apt-head"><h3>Three-Bedroom</h3><span class="count">6 apartments</span></div>
+        <div class="apt-head"><h3><a href="/apartments/three-bedroom/">Three-Bedroom</a></h3><span class="count">6 apartments</span></div>
         <p>Includes up to 6 guests, maximum 9. Each extra guest, adult or child, is MXN&nbsp;200 per night. Three bedrooms, two bathrooms, a full kitchen and a private balcony. Room for the whole family or group.</p>
+        <p class="apt-more"><a href="/apartments/three-bedroom/">Beds, kitchen and house rules for the three-bedroom</a></p>
         <ul class="chips"><li>Full kitchen</li><li>A/C in every room</li><li>Wi-Fi</li><li>Balcony</li><li>2 bathrooms</li></ul>
         <div class="apt-foot">
           <p class="price"><small>From</small><strong>MXN 2,050</strong> <span>/ night</span></p>
@@ -298,9 +320,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <img src="/assets/img/street-600.jpg" srcset="/assets/img/street-600.jpg 600w, /assets/img/street-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 380px" width="600" height="450" alt="The street outside Apartments Tukano, leading toward the beach" loading="lazy">
       <div class="loc-list">
         <p><strong>The beach:</strong> out the front door, across the street, past Nacional Beach Club.</p>
-        <p><strong>From Chetumal or Tulum airport:</strong> about 2 hours by car.</p>
-        <p><strong>From Cancún or Mérida airport:</strong> about 4 hours by car.</p>
-        <p><strong>Costa Maya cruise port:</strong> just north of town, a short taxi ride.</p>
+        <p><strong>Tren Maya:</strong> the nearest station is Limones-Chacchoben, about an hour by road. We can arrange your pickup from the Limones-Chacchoben train station. Send us your arrival time on WhatsApp.</p>
+        <p><strong>Costa Maya cruise port:</strong> about 3 km north of town, a few minutes by taxi.</p>
+        <p><strong>By car:</strong> about 2 hours (about 140 km) from Chetumal airport, about 3 hours from Tulum airport, and about 4½ hours from Cancún airport or Mérida. <a href="/mahahual/getting-there/">How to get to Mahahual</a></p>
       </div>
       <a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&amp;query=Apartments%20Tukano%20Mahahual">View on Google Maps</a>
     </div>
@@ -313,17 +335,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cards">
       <article class="card">
         <img src="/assets/img/beach-600.jpg" width="600" height="410" alt="Clear shallow Caribbean water off Mahahual" loading="lazy">
-        <div><h3>Swim and snorkel</h3><p>Calm, clear water protected by the reef, a short walk from your door.</p></div>
+        <div><h3><a href="/mahahual/things-to-do/">Swim and snorkel</a></h3><p>Calm, clear water protected by the reef, a short walk from your door.</p></div>
       </article>
       <article class="card">
         <img src="/assets/img/beach-boats-600.jpg" width="600" height="400" alt="Local boats moored in turquoise water" loading="lazy">
-        <div><h3>Banco Chinchorro</h3><p>Day trips by boat to the protected coral reef offshore, for diving and snorkelling.</p></div>
+        <div><h3><a href="/mahahual/banco-chinchorro/">Banco Chinchorro</a></h3><p>Day trips by boat to the protected coral reef offshore, for diving and snorkelling.</p></div>
       </article>
       <article class="card">
         <img src="/assets/img/beach-ship-600.jpg" width="600" height="400" alt="Beach goers in the shallows with a cruise ship on the horizon" loading="lazy">
-        <div><h3>The malecón</h3><p>Seafood, beach bars and the boardwalk along the beach, all within walking distance.</p></div>
+        <div><h3><a href="/mahahual/things-to-do/">The malecón</a></h3><p>Seafood, beach bars and the boardwalk along the beach, all within walking distance.</p></div>
       </article>
     </div>
+    <p class="explore-more">Read our guide to <a href="/mahahual/things-to-do/">things to do in Mahahual</a>, how to plan a <a href="/mahahual/banco-chinchorro/">Banco Chinchorro trip</a>, <a href="/mahahual/getting-there/">how to get to Mahahual</a> and our <a href="/long-stays/">long-stay rates</a>.</p>
   </div>
 </section>
 
@@ -334,7 +357,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <details><summary>How many people can stay in an apartment?</summary><p>The two-bedroom price includes up to 4 guests, with a maximum of 6. The three-bedroom price includes up to 6 guests, with a maximum of 9. Each extra guest is MXN&nbsp;200 per person per night. Children count as guests. Every apartment has two bathrooms.</p></details>
     <details><summary>Do the apartments have air conditioning?</summary><p>Yes. Every bedroom and every living room has air conditioning, and Wi-Fi is included.</p></details>
     <details><summary>Is there parking?</summary><p>Yes. There is covered parking under the building.</p></details>
-    <details><summary>How do I get to Mahahual?</summary><p>Chetumal and Tulum airports are about 2 hours away by car. Cancún and Mérida airports are about 4 hours away. The Costa Maya cruise port is a short taxi ride north of town.</p></details>
+    <details><summary>How do I get to Mahahual?</summary><p>Take the Tren Maya to Limones-Chacchoben, about an hour by road from town, and we can arrange your pickup from the station. By car, Chetumal airport is about 2 hours away, Tulum airport about 3 hours, and Cancún airport and Mérida about 4½ hours. The Costa Maya cruise port is about 3 km north of town, a few minutes by taxi. See our full guide on <a href="/mahahual/getting-there/">how to get to Mahahual</a>.</p></details>
     <details><summary>How do I book?</summary><p>Pick your dates above, send us the form below, message us on WhatsApp at +52 983 154 2010, or email tukano@nym.hush.com. Booking direct means no booking-site fees.</p></details>
   </div>
 </section>
@@ -379,6 +402,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Furnished 2- and 3-bedroom apartments in Mahahual, Quintana Roo, one street from the beach behind Nacional Beach Club.</p>
     </div>
     <div>
+      <h2>Plan your stay</h2>
+      <a href="/apartments/two-bedroom/">Two-bedroom apartments</a>
+      <a href="/apartments/three-bedroom/">Three-bedroom apartments</a>
+      <a href="/long-stays/">Long stays</a>
+      <a href="/mahahual/getting-there/">Getting to Mahahual</a>
+      <a href="/mahahual/cruise-port/">Cruise port</a>
+      <a href="/mahahual/things-to-do/">Things to do</a>
+      <a href="/mahahual/banco-chinchorro/">Banco Chinchorro</a>
+    </div>
+    <div>
       <h2>Contact</h2>
       <a href="https://wa.me/529831542010">WhatsApp +52 983 154 2010</a>
       <a href="mailto:tukano@nym.hush.com">tukano@nym.hush.com</a>
@@ -397,7 +430,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <dialog id="lightbox" class="lightbox" aria-label="Photo gallery">
   <div class="lb-inner">
-    <img src="/assets/img/mural-photo-600.jpg" alt="" loading="lazy">
+    <img src="/assets/img/mural-photo-600.jpg" width="600" height="796" alt="" loading="lazy">
     <button class="lb-btn lb-close" type="button" aria-label="Close gallery"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <button class="lb-btn lb-prev" type="button" aria-label="Previous photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
     <button class="lb-btn lb-next" type="button" aria-label="Next photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -406,6 +439,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </dialog>
 
 <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
-<script src="/assets/js/site.js?v=2" defer></script>
+<script src="/assets/js/site.js?v=4" defer></script>
 </body>
 </html>
